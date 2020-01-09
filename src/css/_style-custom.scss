@@ -9,6 +9,10 @@ section.p-standart{
     padding-bottom: 90px;
   }
 }
+.minicol [class^=col]{
+  padding-right: 5px;
+  padding-left: 5px;
+}
 
 //=== header start ===//
 .main-header{
@@ -16,10 +20,44 @@ section.p-standart{
   @include media(lg)  {
     height: 97px;
   }
-  &>.navbar{
+  & .navbar{
     height: 100%;
-    padding-top: 20px;
-    padding-bottom: 14px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    @include media(lg)  {
+      padding-top: 20px;
+      padding-bottom: 14px;
+    }
+    &-brand{
+      height: 30px;
+      padding: 0;
+      @include media(lg){
+        height: 63px;
+      }
+      &_img{
+        height: 100%;
+      }
+    }
+    .header_contacts{
+      &__phone,
+      &__address{
+        text-align: right;
+      }
+      &--large{
+        margin-right: 30px;
+        .header_contacts__phone{
+          font-size: 18px;
+        }
+      }
+    }
+    & .btn-lk .single{
+      margin-right: 8px;
+      stroke: #69b53e;
+    }
+    & .btn-lk:hover .single{
+      stroke: #fff;
+    }
+
   }
 }
 //=== header end ===//
@@ -150,6 +188,12 @@ section.p-standart{
   }
 }
 //=== benefits end ===//
+//=== loan start ===//
+.loan{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+//=== loan end ===//
 //=== map start ===//
 section.map{
   position: relative;
@@ -157,10 +201,14 @@ section.map{
     &_legend{
       position: absolute;
       top: 66px;
-      width: 200px;
+      max-width: 600px;
       padding-top: 48px;
-      padding-right: 16px;
+      padding-right: 40px;
       padding-bottom: 60px;
+      background: #fff;
+      &__item + .map_legend__item{
+        margin-top: 30px;
+      }
     }
   }
 }
