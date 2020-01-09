@@ -1,0 +1,41 @@
+/**
+ * MIXIN: Responsive Media Queries.
+ *
+ * description will be there =)
+ *
+ * USAGE:
+ *	@include media(md)  { }
+ *	@include media(lg)  { }
+ *	@include media(320)  { }
+ *	@include media(1480)  { }
+ *
+ * CSS content goes inside {} brackets. These mixins should be used inside
+ * a class definition. For example:
+ *
+ * The following CSS will hide the .footer on screen width 768px and above.
+ * .footer {
+ * 	  @include media(md)  { display: none; }
+ * }
+ *
+ * @author Alex Elkin
+ */
+
+$breakpoints: (
+        'sm': 576px,
+        'md': 768px,
+        'lg': 992px,
+        'xl': 1200px
+);
+
+@mixin media( $point ) {
+  @if map-has-key($breakpoints, $point) {
+    @media ( min-width: map-get($breakpoints, $point) ) {
+      @content;
+    }
+  }
+  @else {
+    @media ( min-width: $point + 'px') {
+      @content;
+    }
+  }
+}

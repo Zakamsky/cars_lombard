@@ -1,0 +1,174 @@
+body.body-flex-wrapper{
+  min-height: 100vh;
+}
+section.p-standart{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include media(lg)  {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+//=== header start ===//
+.main-header{
+  height: 56px;
+  @include media(lg)  {
+    height: 97px;
+  }
+  &>.navbar{
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+}
+//=== header end ===//
+//=== first screen start ===//
+.first_screen{
+  flex-direction: column;
+  padding-bottom: 0;
+  @include media(lg){
+    flex-direction: row;
+  }
+
+  &__title{
+    margin-bottom: 30px;
+    @include media(lg)  {
+      margin-bottom: 90px;
+    }
+  }
+  &__slider{
+    margin-bottom: 20px;
+    @include media(lg)  {
+      margin-bottom: 44px;
+    }
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include media(lg){
+      flex-direction: column-reverse;
+    }
+  }
+  &__car{
+    margin-bottom: 16px;
+    @include media(lg)  {
+      margin-bottom: 23px;
+    }
+  }
+  &__bank {
+    padding-right: 16px;
+    @include media(lg) {
+      padding-right: 113px;
+    }
+  }
+}
+//=== first screen end ===//
+//=== calculator start===//
+//=== calculator end ===//
+//=== schema start ===47.5-95//
+.scheme{
+  &__title{
+    margin-bottom: 25px;
+    @include media(lg){
+      margin-bottom: 60px;
+    }
+  }
+  &__row{
+    position: static;
+    @include media(lg){
+      position: relative;
+    }
+    &::before{
+      content: none;
+      @include media(lg){
+        content: '';
+        position: absolute;
+        width: 70%;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 2px solid $line;
+      }
+    }
+  }
+  &__block{
+    align-items: center;
+    &_ico{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+      width: 47.5px;
+      height: 47.5px;
+      min-width: 45px;
+      color: #FFF;
+      @include media(lg){
+        width: 90px;
+        height: 90px;
+        margin-right: 0;
+        margin-bottom: 33px;
+      }
+    }
+  }
+}
+//=== schema end ===//
+//=== manager_and_app start ===//
+//=== manager_and_app end ===//
+//=== benefits start ===//
+.benefits{
+  background: none;
+  @include media(lg){
+    background: $secondary;
+  }
+  &__block{
+    list-style: none;
+    margin: 0;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    margin: 12.5px 0;
+    min-height: 72px;
+    @include media(lg){
+      margin: 0;
+    }
+    &::before{
+      content: '';
+      display: block;
+      min-width: 44px;
+      width: 44px;
+      height: 44px;
+      margin-right: 30px;
+      margin-left: 10px;
+      background: $primary;
+      @include media(lg){
+        margin-left: 0;
+      }
+    }
+  }
+}
+//=== benefits end ===//
+//=== map start ===//
+section.map{
+  position: relative;
+  .map{
+    &_legend{
+      position: absolute;
+      top: 66px;
+      width: 200px;
+      padding-top: 48px;
+      padding-right: 16px;
+      padding-bottom: 60px;
+    }
+  }
+}
+//=== map end ===//
+//=== footer ===
+.footer{
+  padding-top: 60px;
+  &-brand img{
+    filter: brightness(0) invert(1) opacity(0.3);
+  }
+}

@@ -1,0 +1,13 @@
+.container{
+  outline: 6px solid green;
+}
+.row{
+  outline: 4px dashed orange;
+}
+[class^="col"]{
+  outline: 2px dotted teal;
+}
+
+section, footer{
+  min-height: 200px;
+}
