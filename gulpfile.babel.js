@@ -89,9 +89,10 @@ export function styles() {
         sass({ outputStyle: 'expand' }), // {outputStyle: 'expand' for nonminify style file, 'compressed' for minify
         gcmq(),
         cleanCSS(),
-        sourcemaps.write(), //sourcemaps for development mode
+        // sourcemaps.write(), //sourcemaps for development mode
         // autoprefixer(['last 15 versions']),
         rename({ suffix: '.min'}),// pass in options to the stream
+        sourcemaps.write(), //sourcemaps for development mode
         gulp.dest(paths.styles.dest)
     ).on('error', notify.onError());
 }

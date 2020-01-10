@@ -1,11 +1,51 @@
 <section class="p-standart calculator">
     <div class="container">
-        <div class="calculator__titles d-none d-lg-block text-center">
+        <div class="calculator__title d-none d-lg-block text-center">
             <h2 class="calculator__title_header text-center">Калькулятор займа</h2>
             <div class="calculator__title_text">Выберите сумму необходимого займа и получите одобрение онлайн</div>
         </div>
-        <div class="calculator__form p-3">
-            тут будет калькулятор
+        <div class="row calculator__block justify-content-center">
+            <div class="col-lg-6">
+                <div class="calculator__top d-flex justify-content-between">
+                    <div class="calculator__summ">
+                        сумма займа
+                    </div>
+                    <div class="calculator__car_coast d-none d-lg-flex">
+                        <div class="calculator__coast text-right">80% стоимости вашего авто</div>
+                        <div class="calculator__car">
+                            <svg class="carclean-ico" width="41" height="41">
+                                <use xlink:href="#carclean"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="ion-slider" name="ion-slider" value="" />
+            </div>
+            <div class="calculator__form col-lg-4">
+                <div class="calculator__value">
+                    Платеж в месяц:
+                    <div class="calculator__value--num value_month js-value-month">
+
+                    </div>
+                </div>
+                <div class="calculator__value">
+                    Платеж в день:
+                    <div class="calculator__value--num value_day js-value-day">
+
+                    </div>
+                </div>
+                <form action="">
+                    <input class="js-input-total" type="text" >
+                    <input class="js-input-month" type="text" >
+                    <input class="js-input-day" type="text" >
+                    <input type="text">
+                    <input type="text">
+                </form>
+            </div>
         </div>
+
     </div>
+
 </section>
+
+<!-- <svg width="15.989" height="16"><use xlink:href="#flag"></use></svg> -->
