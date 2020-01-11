@@ -1,7 +1,7 @@
 <section class="p-standart first_screen bg-secondary d-flex fake-container-left">
     <div class="first_screen__left ">
         <h1 class="first_screen__title">Деньги под залог ПТС</h1>
-        <div class="first_screen__slider d-flex">
+        <div class="first_screen__slider">
             <div class="first_screen__slider--ico mr-3 d-none d-lg-block">
                 <svg width="55" height="55">
                     <use xlink:href="#money"></use>
@@ -12,22 +12,22 @@
                 <div class="first_screen__slider--text">до 80% стоимости за 30 минут</div>
             </div>
         </div>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#testModal">получить займ</button>
+        <button class="btn btn-primary d-none d-lg-block" data-toggle="modal" data-target="#testModal">получить займ</button>
     </div>
     <div class="first_screen__right">
         <div class="first_screen__car">
             <img class="first_screen__car--img img-fluid" src="img/maine-car.png" alt="">
         </div>
-        <div class="first_screen__bank">
+        <div class="first_screen__bank fake-container-right">
             <div class="first_screen__bank--title d-flex align-items-center justify-content-end">
                 <div class="first_screen__bank--title_ico">
-                    <svg width="36.143" height="35.789">
+                    <svg class="bank-svg" >
                         <use xlink:href="#bank"></use>
                     </svg>
                 </div>
-                <div class="first_screen__bank--title_text text-danger">
-                    Банк России
-                </div>
+                <!--<div class="first_screen__bank&#45;&#45;title_text text-danger">-->
+                    <!--Банк России-->
+                <!--</div>-->
             </div>
             <div class="first_screen__bank--title_reestr text-right">
                 состоим в  реестре ЦБ РФ
