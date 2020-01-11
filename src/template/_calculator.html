@@ -5,7 +5,7 @@
             <div class="calculator__title_text">Выберите сумму необходимого займа и получите одобрение онлайн</div>
         </div>
         <div class="row calculator__block justify-content-center">
-            <div class="col-lg-6">
+            <div class="calculator__block_left col-lg-6">
                 <div class="calculator__top d-flex justify-content-between">
                     <div class="calculator__summ">
                         сумма займа
@@ -21,26 +21,38 @@
                 </div>
                 <input type="text" class="ion-slider" name="ion-slider" value="" />
             </div>
-            <div class="calculator__form col-lg-4">
-                <div class="calculator__value">
-                    Платеж в месяц:
+            <div class="calculator__block_right col-lg-4">
+                <div class="calculator__value month d-flex d-lg-block">
+                    <span class="d-none d-lg-block">Платеж в месяц:</span>
                     <div class="calculator__value--num value_month js-value-month">
 
-                    </div>
+                    </div><span class="d-block d-lg-none ml-2"> в месяц</span>
                 </div>
-                <div class="calculator__value">
-                    Платеж в день:
+                <div class="calculator__value day d-flex d-lg-block">
+                    <span class="d-none d-lg-block">Платеж в день:</span>
                     <div class="calculator__value--num value_day js-value-day">
 
-                    </div>
+                    </div><span class="d-block d-lg-none ml-2"> в день</span>
                 </div>
-                <form action="">
-                    <input class="js-input-total" type="text" >
-                    <input class="js-input-month" type="text" >
-                    <input class="js-input-day" type="text" >
-                    <input type="text">
-                    <input type="text">
-                </form>
+                <div class="calculator__form--wrap js-popup-switcher">
+                    <span class="fade-for-form js-calc-form-open"></span>
+                    <form class="calculator__form" action="">
+                        <button type="button" class="close d-none d-lg-block js-calc-form-open" >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <input class="js-input-total" type="text" hidden>
+                        <input class="js-input-month" type="text" hidden>
+                        <input class="js-input-day" type="text" hidden>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" name="" placeholder="ваш телефон" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Оформить заявку</button>
+                    </form>
+                </div>
+                <button class="btn btn-primary w-100 d-none d-lg-block js-calc-form-open">Получить займ</button>
             </div>
         </div>
 

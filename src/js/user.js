@@ -2,8 +2,6 @@
 let $inputMonth = $(".js-input-month"),
     $inputDay = $(".js-input-day"),
     $inputTotal = $(".js-input-total"),
-    // $value = $(".js-value"),
-    // $value_h = $(".js-value-half"),
     $valueMonth = $(".js-value-month"),
     $valueDay = $(".js-value-day"),
     min = 10000,
@@ -59,8 +57,13 @@ function addFlag ($slider) {
 
     //   for (i = 0; i < marks.length; i++) {
     left = convertToPercent(flag);
-    html += '<span class="flag" style="left: ' + left + '%"><svg class="flag__ico" width="15.989" height="16"><use xlink:href="#flag"></use></svg> Клуб «Первый»</span>';
+    html += '<span class="flag " style="left: ' + left + '%"><svg class="flag__ico" width="15.989" height="16"><use xlink:href="#flag"></use></svg> Клуб «Первый»</span>';
     //   }
 
     $slider.append(html);
 }
+
+// open calculator's form popap
+$( ".js-calc-form-open" ).click(function() {
+    $(".js-popup-switcher").toggleClass("form-collapse")
+});
