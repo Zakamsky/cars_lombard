@@ -302,6 +302,7 @@ small, .small {
   }
   &__block{
     align-items: center;
+    margin-bottom: 25px;
     &_ico{
       display: flex;
       justify-content: center;
@@ -310,12 +311,27 @@ small, .small {
       width: 47.5px;
       height: 47.5px;
       min-width: 45px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Gerbera-Bold, sans-serif;
       color: #FFF;
+      box-shadow: 0 0 2px 5px rgba($shadow-green, 0.2);
       @include media(lg){
         width: 90px;
         height: 90px;
         margin-right: 0;
         margin-bottom: 33px;
+        font-size: 36px;
+      }
+    }
+    &_badge{
+      display: inline-block;
+      margin-top: 12px;
+      padding: 0.5em 1em;
+      min-width: 93px;
+      font-size: 12px;
+      @include media(lg){
+        margin-top: 20px;
       }
     }
   }
