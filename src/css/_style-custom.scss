@@ -96,6 +96,11 @@ small, .small {
       text-align: left;
     }
   }
+  &__crousel{
+    overflow-x: hidden;
+    max-width: 450px;
+    margin: auto;
+  }
   &__slider{
     margin-bottom: 30px;
     padding-right: 1em;
