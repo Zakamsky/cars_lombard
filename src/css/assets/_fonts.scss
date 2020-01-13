@@ -1,0 +1,12 @@
+//@mixin font-face($name, $path, $weight, $style, $exts: eot woff2 woff ttf svg)
+//for example
+//@include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+
+@include font-face(Averta, "../fonts/AvertaPE-Black", 900, normal, ttf woff2 woff);
+@include font-face(Averta, "../fonts/AvertaPE-Bold", 700, normal, ttf woff2 woff);
+@include font-face(Averta, "../fonts/AvertaPE-Light", 200, normal, ttf woff2 woff);
+@include font-face(Averta, "../fonts/AvertaPE-Regular", 400, normal, ttf woff2 woff);
+
+body{
+  font-family: Averta, sans-serif;
+}

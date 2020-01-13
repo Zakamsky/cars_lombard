@@ -1,6 +1,8 @@
 html,
 body{
-  color: $dark
+  color: $dark;
+  font-family: Averta, sans-serif;
+
 }
 body.body-flex-wrapper{
   min-height: 100vh;
@@ -96,7 +98,7 @@ small, .small {
       text-align: left;
     }
   }
-  &__crousel{
+  &__carousel{
     overflow-x: hidden;
     max-width: 450px;
     margin: auto;
@@ -155,7 +157,7 @@ small, .small {
 
   &__title{
     margin-bottom: 40px;
-    &__text{
+    &_text{
       color: $text-gray;
     }
   }
@@ -469,4 +471,34 @@ section.map{
   &-brand img{
     filter: brightness(0) invert(1) opacity(0.3);
   }
+}
+
+.first_screen__title{
+  font-family: Averta, sans-serif;
+  font-weight: 900;
+}
+h2, b, strong,
+.map_legend__address,
+.first_screen__slider--title,
+.calculator irs-single,
+.calculator irs-min,
+.calculator irs-max,
+.scheme__block_title,
+.text-strong
+
+{
+  font-family: Averta, sans-serif;
+  font-weight: bold;
+}
+.calculator__value--num.value_month,
+.calculator__value--num.value_day{
+  font-weight: 200;
+  @include media(lg){
+    font-weight: bold;
+  }
+}
+.text-light,
+.first_screen__slider--text,
+.calculator__title_text{
+  font-weight: 200;
 }
